@@ -1,6 +1,6 @@
 import 'package:hive/hive.dart';
 
-part 'taskModel.g.dart'; // Hive will generate this
+part 'taskModel.g.dart';
 
 @HiveType(typeId: 0)
 class TaskModel extends HiveObject {
@@ -23,7 +23,7 @@ class TaskModel extends HiveObject {
   @HiveField(5)
   int recurrence;
 
-  /// 🔑 Firestore docId
+
   @HiveField(6)
   String? firestoreId;
 
